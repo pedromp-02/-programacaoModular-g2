@@ -12,4 +12,4 @@ def test_comparacao():
     assert compara('fine', 'FInE') == True
     assert compara('fine', 'FinE') == True    
     assert compara('fine', 'FiNE') == True
-    assert compara('fine', 'FINe') == True
+    assert compara('fine', 'FINe') == False
