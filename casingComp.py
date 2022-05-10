@@ -1,2 +1,2 @@
-def compara(a,b):
+def test_compara(a,b):
     return True
