@@ -1,2 +1,2 @@
 def compara(a,b):
-  return True
+    return True
