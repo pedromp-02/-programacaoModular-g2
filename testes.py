@@ -2,7 +2,6 @@ from casingComp import *
 
 def test_comparacao():
     assert compara('fine', 'fine') == True
-    assert compara('fine', 'fine') == True
     assert compara('fine', 'FINE') == True
     assert compara('fine', 'Fine') == True
     assert compara('fine', 'fINE') == True
