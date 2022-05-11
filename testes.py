@@ -21,7 +21,7 @@ def test_comparacao():
     assert compara('fINE', 'FINE') == True
     assert compara('fINE', 'fINE') == True
     
- def test_casing():
+def test_casing():
     assert casing('FINE', 'good') == 'GOOD'
     #assert casing('Fine', 'good') == 'Good'
     #assert casing('fINE', 'good') == 'gOOD'
