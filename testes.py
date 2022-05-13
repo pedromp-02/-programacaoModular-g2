@@ -1,4 +1,5 @@
 from casingComp import *
+from manipulacao import *
 
 def test_comparacao():
     assert compara('fine', 'fine') == True
@@ -46,4 +47,12 @@ def test_casing():
     #assert casing('Fine', 'good') == 'Good'
     #assert casing('fINE', 'good') == 'gOOD'
     #assert casing('fine', 'good') == 'good'
+    #assert casing('FinE', 'good') == 'GooD'
+    #assert casing('fiNE', 'good') == 'goOD'
+    #assert casing('fIne', 'good') == 'gOod'
+    #assert casing('fINe', 'good') == 'gOOd'
+    #assert casing('FIne', 'good') == 'GOod'
+    #assert casing('FiNe', 'good') == 'GoOd'
+    #assert casing('FInE', 'good') == 'GOoD'
+    #assert casing('FINe', 'good') == 'GOOd'
   
