@@ -43,8 +43,46 @@ def test_compara_palavrascao():
     assert compara_palavras('FINE', 'Nice') == False
     
 def test_match_casing():
+    assert match_casing('HE', 'my') == 'MY'
+    assert match_casing('He', 'my') == 'My' 
+    assert match_casing('he', 'my') == 'my'
+    
+    assert match_casing('HI', 'hello') == 'HELLO'
+    assert match_casing('Hi', 'hello') == 'Hello' 
+    assert match_casing('hi', 'hello') == 'hello'
+    
+    assert match_casing('TRY', 'dry') == 'TRY'
+    assert match_casing('Try', 'dry') == 'Try'
+    assert match_casing('try', 'dry') == 'try'
+    
+    assert match_casing('WHY', 'where') == 'WHERE'
+    assert match_casing('Why', 'where') == 'Where'
+    assert match_casing('why', 'where') == 'where'
+    
     assert match_casing('FINE', 'good') == 'GOOD'
     assert match_casing('Fine', 'good') == 'Good'
     assert match_casing('fine', 'good') == 'good'
-    assert match_casing('fINE', 'good') == 'good'
+   
+    assert match_casing('SOUP', 'vegetable') == 'VEGETABLE'
+    assert match_casing('Soup', 'vegetable') == 'Vegetable'
+    assert match_casing('soup', 'vegetable') == 'vegetable'
+    
+    assert match_casing('LIGHT', 'heavy') == 'HEAVY'
+    assert match_casing('Light', 'heavy') == 'Heavy'
+    assert match_casing('light', 'heavy') == 'heavy'
+    
+    assert match_casing('RANCH', 'hyperbole') == 'HYPERBOLE'
+    assert match_casing('Ranch', 'hyperbole') == 'Hyperbole'
+    assert match_casing('ranch', 'hyperbole') == 'hyperbole'
+    
+    #assert match_casing('fINE', 'good') == 'good'
+    #assert match_casing('FinE', 'good') == 'good'
+    #assert match_casing('fiNE', 'good') == 'good'
+    #assert match_casing('fIne', 'good') == 'good'
+    #assert match_casing('fINe', 'good') == 'good'
+    #assert match_casing('FIne', 'good') == 'good'
+    #assert match_casing('FiNe', 'good') == 'good'
+    #assert match_casing('FInE', 'good') == 'good'
+    #assert match_casing('FINe', 'good') == 'good'
+  
     
