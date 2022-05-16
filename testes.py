@@ -1,6 +1,8 @@
 from casingComp import *
 from manipulacao import *
 
+# não precisa comentar os testes com erro, é bom para desenvolver se baseando em que testes faltam passar
+
 def test_compara_palavrascao():
     assert compara_palavras('fine', 'fine') == True
     assert compara_palavras('fine', 'Fine') == True
@@ -88,17 +90,15 @@ def test_match_casing():
     assert match_casing('MIGHTY', 'henceforth') == 'HENCEFORTH'
     assert match_casing('Mighty', 'henceforth') == 'Henceforth'
     assert match_casing('mighty', 'henceforth') == 'henceforth'
-    
-    # Match_casing não está defaultando para lowercase, como os testes abaixo:
-    
-    #assert match_casing('fINE', 'good') == 'good'    
-    #assert match_casing('FinE', 'good') == 'good'
-    #assert match_casing('fiNE', 'good') == 'good'
-    #assert match_casing('fIne', 'good') == 'good'
-    #assert match_casing('fINe', 'good') == 'good'
-    #assert match_casing('FIne', 'good') == 'good'
-    #assert match_casing('FiNe', 'good') == 'good'
-    #assert match_casing('FInE', 'good') == 'good'
-    #assert match_casing('FINe', 'good') == 'good'
+        
+    assert match_casing('fINE', 'good') == 'good'    
+    assert match_casing('FinE', 'good') == 'good'
+    assert match_casing('fiNE', 'good') == 'good'
+    assert match_casing('fIne', 'good') == 'good'
+    assert match_casing('fINe', 'good') == 'good'
+    assert match_casing('FIne', 'good') == 'good'
+    assert match_casing('FiNe', 'good') == 'good'
+    assert match_casing('FInE', 'good') == 'good'
+    assert match_casing('FINe', 'good') == 'good'
   
     
