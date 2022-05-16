@@ -42,23 +42,16 @@ def test_compara_palavrascao():
     assert compara_palavras('FINE', 'NICE') == False
     assert compara_palavras('FINE', 'Nice') == False
     
-"""
-match casing só funciona uppercase, lowercase e titlecase. se não for nenhum desses é
-retornado o lowercase. essa aplicação letra a letra só funciona se as palavras terem o
-mesmo comprimento, mas elas podem não ter. lembrar de fazer testes para palavras com
-comprimentos diferentes.
-"""
 def test_match_casing():
     assert match_casing('FINE', 'good') == 'GOOD'
     assert match_casing('Fine', 'good') == 'Good'
-    #assert match_casing('fINE', 'good') == 'gOOD'
     assert match_casing('fine', 'good') == 'good'
-    #assert match_casing('FinE', 'good') == 'GooD'
-    #assert match_casing('fiNE', 'good') == 'goOD'
-    #assert match_casing('fIne', 'good') == 'gOod'
-    #assert match_casing('fINe', 'good') == 'gOOd'
-    #assert match_casing('FIne', 'good') == 'GOod'
-    #assert match_casing('FiNe', 'good') == 'GoOd'
-    #assert match_casing('FInE', 'good') == 'GOoD'
-    #assert match_casing('FINe', 'good') == 'GOOd'
-  
+    assert match_casing('fINE', 'good') == 'good'
+    assert match_casing('FinE', 'good') == 'good'
+    assert match_casing('fiNE', 'good') == 'good'
+    assert match_casing('fIne', 'good') == 'good'
+    assert match_casing('fINe', 'good') == 'good'
+    assert match_casing('FIne', 'good') == 'good'
+    assert match_casing('FiNe', 'good') == 'good'
+    assert match_casing('FInE', 'good') == 'good'
+    assert match_casing('FINe', 'good') == 'good'
