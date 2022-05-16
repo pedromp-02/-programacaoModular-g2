@@ -51,9 +51,9 @@ def test_match_casing():
     assert match_casing('Hi', 'hello') == 'Hello' 
     assert match_casing('hi', 'hello') == 'hello'
     
-    assert match_casing('TRY', 'dry') == 'TRY'
-    assert match_casing('Try', 'dry') == 'Try'
-    assert match_casing('try', 'dry') == 'try'
+    assert match_casing('TRY', 'dry') == 'DRY'
+    assert match_casing('Try', 'dry') == 'Dry'
+    assert match_casing('try', 'dry') == 'dry'
     
     assert match_casing('WHY', 'where') == 'WHERE'
     assert match_casing('Why', 'where') == 'Where'
