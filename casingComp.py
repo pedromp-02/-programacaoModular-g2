@@ -19,7 +19,7 @@ def match_casing(palavra1,palavra2):
     if palavra1.islower():
         return palavra2.lower() # lower
     else:
-        if palavra1.istitle:
+        if palavra1.istitle():
             return palavra2.title() # title
         else:
             return palavra2.lower() # default
