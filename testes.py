@@ -46,3 +46,5 @@ def test_match_casing():
     assert match_casing('FINE', 'good') == 'GOOD'
     assert match_casing('Fine', 'good') == 'Good'
     assert match_casing('fine', 'good') == 'good'
+    assert match_casing('fINE', 'good') == 'good'
+    
