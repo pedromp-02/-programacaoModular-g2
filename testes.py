@@ -43,6 +43,12 @@ def test_compara_palavrascao():
     assert compara_palavras('FINE', 'Nice') == False
     
 def test_match_casing():
+    assert match_casing('I', 'i') == 'I'
+    assert match_casing('i', 'i') == 'i' 
+    
+    assert match_casing('I', 'am') == 'AM'
+    assert match_casing('i', 'am') == 'am' 
+    
     assert match_casing('HE', 'my') == 'MY'
     assert match_casing('He', 'my') == 'My' 
     assert match_casing('he', 'my') == 'my'
@@ -75,7 +81,15 @@ def test_match_casing():
     assert match_casing('Ranch', 'hyperbole') == 'Hyperbole'
     assert match_casing('ranch', 'hyperbole') == 'hyperbole'
     
-    #assert match_casing('fINE', 'good') == 'good'
+    assert match_casing('HEIGHT', 'crouch') == 'CROUCH'
+    assert match_casing('Height', 'crouch') == 'Crouch'
+    assert match_casing('height', 'crouch') == 'crouch'
+    
+    assert match_casing('MIGHTY', 'henceforth') == 'HENCEFORTH'
+    assert match_casing('Mighty', 'henceforth') == 'Henceforth'
+    assert match_casing('mighty', 'henceforth') == 'henceforth'
+    
+    #assert match_casing('fINE', 'good') == 'good'    
     #assert match_casing('FinE', 'good') == 'good'
     #assert match_casing('fiNE', 'good') == 'good'
     #assert match_casing('fIne', 'good') == 'good'
