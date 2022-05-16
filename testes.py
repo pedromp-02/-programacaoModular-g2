@@ -89,7 +89,7 @@ def test_match_casing():
     assert match_casing('Mighty', 'henceforth') == 'Henceforth'
     assert match_casing('mighty', 'henceforth') == 'henceforth'
     
-    #assert match_casing('fINE', 'good') == 'good'    
+    assert match_casing('fINE', 'good') == 'good'    
     #assert match_casing('FinE', 'good') == 'good'
     #assert match_casing('fiNE', 'good') == 'good'
     #assert match_casing('fIne', 'good') == 'good'
