@@ -32,7 +32,7 @@ def replace_word_in_text(txt,w,s):
             elif(aux_counter == 3):     #Caso de "..." confirmado
                 aux_word2 += c
 
-                if(aux_word2[1:] == w):
+                if(compara_palavras(aux_word2[1:],w)):
                     counter = 1
                     for a in word:
                         if(a == "."):
@@ -40,7 +40,7 @@ def replace_word_in_text(txt,w,s):
                         aux_word3 += a
 
                     word = ""
-                    word += aux_word3 + aux_word1 + s
+                    word += aux_word3 + aux_word1 + match_casing(aux_word2[1:],s)
                     aux_counter = 0
                     aux_word1 = ""
                     aux_word2 = ""
