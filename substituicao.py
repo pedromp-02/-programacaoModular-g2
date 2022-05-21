@@ -62,5 +62,5 @@ def replace_word_in_text(txt,w,s):
     return t
 '''
 
-def substitui_palavra(texto,palavra_sub):
+def substitui_palavra(texto,palavra,sub):
     return "Teste mock"
