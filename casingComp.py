@@ -2,8 +2,8 @@
 
 # compara as duas palavras em minúsculo, retorna o resultado da comparação
 def compara_palavras(palavra1,palavra2):
-    palavra1lower = palavra1.casefold()
-    palavra2lower = palavra2.casefold()
+    palavra1lower = palavra1.lower()
+    palavra2lower = palavra2.lower()
     return palavra1lower == palavra2lower
 
 """
