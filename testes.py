@@ -1,6 +1,7 @@
 from casingComp import *
 from manipulacao import *
 
+# Testes do módulo de comparação e casing match de palavras:
 def test_compara_palavras():
     assert compara_palavras('fine', 'fine') == True
     assert compara_palavras('fine', 'Fine') == True
@@ -125,3 +126,8 @@ def test_match_casing():
     assert match_casing('migHTY', 'henceforth') == 'henceforth'
     assert match_casing('MIGhty', 'henceforth') == 'henceforth'
     assert match_casing('MightY', 'henceforth') == 'henceforth'
+    
+# Testes do módulo de manipulação de strings e arquivos:
+def test_gera_arquivo(texto):
+    f = open("texto-alterado.txt",'r')
+    assert texto==f.read()
