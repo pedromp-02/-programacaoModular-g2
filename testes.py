@@ -128,6 +128,6 @@ def test_match_casing():
     assert match_casing('MightY', 'henceforth') == 'henceforth'
     
 # Testes do módulo de manipulação de strings e arquivos:
-def test_gera_arquivo(texto):
+def test_gera_arquivo('texto'):
     f = open("texto-alterado.txt",'r')
-    assert texto==f.read()
+    assert 'texto'==f.read()
