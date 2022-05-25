@@ -16,10 +16,9 @@ se a palavra não for nenhum dos casos defaulta pra minúsculo
 def match_casing(palavra1,palavra2):
     if palavra1.isupper(): 
         return palavra2.upper() # upper
-    if palavra1.islower():
+    elif palavra1.islower():
         return palavra2.lower() # lower
+    elif palavra1.istitle():
+        return palavra2.title() # title
     else:
-        if palavra1.istitle():
-            return palavra2.title() # title
-        else:
-            return palavra2.lower() # default
+        return palavra2.lower() # default
