@@ -130,4 +130,5 @@ def test_match_casing():
     
 # Testes do módulo de substituição de palavras:
 def test_substitui_palavra():
-    assert substitui_palavra('Have a good day.', 'day', 'night') == 'Have a good night.'
+    assert substitui_palavra('Have a good day', 'day', 'night') == 'Have a good night'
+    assert substitui_palavra('This is a test', 'THIS', 'that') == 'That is a test'
