@@ -136,6 +136,6 @@ def test_substitui_palavra():
     assert substitui_palavra('Make it WORK', 'work', 'RUN') == 'Make it RUN'
     assert substitui_palavra('Have a good DAY', 'dAy', 'EvEnInG') == 'Have a good EVENING'
     assert substitui_palavra('This is clearly a test', 'cLEARLY', 'simPLy') == 'This is simply a test'
-    assert substitui_palavra('The following word is deleted', 'DeLEteD', '') == 'The following word is'
+    assert substitui_palavra('The following word is deleted', 'DeLEteD', '') == 'The following word is '
     assert substitui_palavra('That is SpEcIfIc', 'SpecifiC', 'neat') == 'That is NeAt'
     assert substitui_palavra('There are 362 days in a year', '362', '365') == 'There are 365 days in a year'
