@@ -138,4 +138,4 @@ def test_substitui_palavra():
     assert substitui_palavra('This is clearly a test', 'cLEARLY', 'simPLy') == 'This is simply a test'
     assert substitui_palavra('The following word is deleted', 'DeLEteD', '') == 'The following word is '
     assert substitui_palavra('That is SpEcIfIc', 'SpecifiC', 'neat') == 'That is neat'
-    assert substitui_palavra('There are 362 days in a year', '362', '365') == 'There are 365 days in a year'
+    assert substitui_palavra('There are 365 days in a year', '365', '321') == 'There are 365 days in a year'
