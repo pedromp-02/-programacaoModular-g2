@@ -134,5 +134,5 @@ def test_substitui_palavra():
     assert substitui_palavra('example', 'EXAMPLE', 'TEST') == 'test'
     assert substitui_palavra('HELLO world', 'hello', 'HI') == 'HI world'
     assert substitui_palavra('Make it WORK', 'work', 'RUN') == 'Make it RUN'
-    assert substitui_palavra('Have a good DAY', 'dAy', 'EvEnIg') == 'Have a good EVENING'
+    assert substitui_palavra('Have a good DAY', 'dAy', 'EvEnInG') == 'Have a good EVENING'
     assert substitui_palavra('This is clearly a test', 'cLEARLY', 'simPLy') == 'This is simply a test'
