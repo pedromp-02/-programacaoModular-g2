@@ -130,9 +130,9 @@ def test_match_casing():
     
 # Testes do módulo de substituição de palavras:
 def test_substitui_palavra():
-    assert substitui_palavra('small test', 'small', 'big') == 'big test'
+    assert substitui_palavra('a string', 'a', 'another') == 'another string'
     assert substitui_palavra('EXAMPLE', 'EXAMPLE', 'TEST') == 'TEST'
-    assert substitui_palavra('A string', 'a', 'another') == 'Another string'
+    assert substitui_palavra('Small test', 'small', 'big') == 'Big test'
     assert substitui_palavra('hello world', 'HELLO', 'hi') == 'hi world'
     assert substitui_palavra('This is sPECIFIC', 'SpeCiFiC', 'nEAT') == 'This is neat'
     assert substitui_palavra('The following word is deleted', 'DELETED', '') == 'The following word is '
