@@ -1,5 +1,6 @@
 from casingComp import *
 from manipulacao import *
+from substituicao import *
 
 # Testes do módulo de comparação e casing match de palavras:
 def test_compara_palavras():
@@ -126,3 +127,7 @@ def test_match_casing():
     assert match_casing('migHTY', 'henceforth') == 'henceforth'
     assert match_casing('MIGhty', 'henceforth') == 'henceforth'
     assert match_casing('MightY', 'henceforth') == 'henceforth'
+    
+# Testes do módulo de substituição de palavras:
+def test_substitui_palavra():
+    assert substitui_palavra('Have a good day.', 'day', 'night') == 'Have a good night.'
