@@ -1,7 +1,15 @@
-from casingComp import *
 from manipulacao import *
+from casingComp import *
 from substituicao import *
 
+# Testes do módulo de manipulação:
+def test_gera_arquivo():
+    f = gera_arquivo('This is a test\n')
+    with open("texto-alterado.txt", 'r') as f:
+        esperado = 'This is a test\n'
+        assert esperado == f.read()
+    f.close()
+    
 # Testes do módulo de comparação e casing match de palavras:
 def test_compara_palavras():
     assert compara_palavras('fine', 'fine') == True
@@ -127,15 +135,6 @@ def test_match_casing():
     assert match_casing('migHTY', 'henceforth') == 'henceforth'
     assert match_casing('MIGhty', 'henceforth') == 'henceforth'
     assert match_casing('MightY', 'henceforth') == 'henceforth'
-    
-# Testes do módulo de manipulação:
-def test_gera_arquivo():
-    f = gera_arquivo('This is a test\n')
-    with open("texto-alterado.txt", 'r') as f:
-        esperado = 'This is a test\n'
-        print(f.read())
-        assert esperado == f.read()
-    f.close()
     
 # Testes do módulo de substituição de palavras:
 def test_substitui_palavra():
