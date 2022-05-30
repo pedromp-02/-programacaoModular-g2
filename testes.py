@@ -134,8 +134,7 @@ def test_gera_arquivo():
     f.write('This is a test')
     f.close()
     f = open("resultado.txt", "r")
-    X = gera_arquivo('This is a test')
-    assert X.read() == f.read()
+    assert gera_arquivo('This is a test') == f
     f.close()
 
 # Testes do módulo de substituição de palavras:
