@@ -4,10 +4,18 @@ from substituicao import *
 
 # Testes do módulo de manipulação:
 def test_gera_arquivo():
-    conteudo = 'This is a test\n'
-    f = gera_arquivo(conteudo)
+    string = 'This is a test\n'
+    f = gera_arquivo(string)
     with open("texto-alterado.txt", 'r') as f:
-        assert conteudo == f.read()
+        assert string == f.read()
+    f.close()
+    
+def test_gera_string():
+    with open("teste.txt", 'w') as f:
+        f.write('This is another test\n')
+    f.close()
+    with open("teste.txt", 'r') as f:
+        assert f.read() == gera_string("teste.txt")
     f.close()
     
 # Testes do módulo de comparação e casing match de palavras:
