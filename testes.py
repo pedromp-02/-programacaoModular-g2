@@ -136,6 +136,7 @@ def test_gera_arquivo():
     f = open("resultado.txt", "r")
     expectado = 'This is a test\n'
     assert expectado == f.read()
+    f.close()
     
 # Testes do módulo de substituição de palavras:
 def test_substitui_palavra():
