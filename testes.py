@@ -128,6 +128,13 @@ def test_match_casing():
     assert match_casing('MIGhty', 'henceforth') == 'henceforth'
     assert match_casing('MightY', 'henceforth') == 'henceforth'
     
+# Testes do módulo de manipulação:
+def test_gera_arquivo():
+    f = open("resultado.txt", "w")
+    f.write('This is a test')
+    assert gera_arquivo('This is a test') == f.read()
+    f.close()
+
 # Testes do módulo de substituição de palavras:
 def test_substitui_palavra():
     assert substitui_palavra('a string', 'a', 'another') == 'another string'
