@@ -4,7 +4,7 @@ from substituicao import *
 
 # Testes do módulo de manipulação:
 def test_gera_arquivo():
-    f = gera_arquivo('This is a test\n')
+    gera_arquivo('This is a test\n')
     with open("texto-alterado.txt", 'r') as f:
         esperado = 'This is a test\n'
         assert esperado == f.read()
