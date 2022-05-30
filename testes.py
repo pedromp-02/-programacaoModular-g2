@@ -133,6 +133,7 @@ def test_gera_arquivo():
     f = gera_arquivo('This is a test\n')
     with open("texto-alterado.txt", 'r') as f:
         esperado = 'This is a test\n'
+        print(f.read())
         assert esperado == f.read()
     f.close()
     
