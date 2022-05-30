@@ -132,6 +132,8 @@ def test_match_casing():
 def test_gera_arquivo():
     f = open("resultado.txt", "w")
     f.write('This is a test')
+    f.close()
+    f = open("resultado.txt", "r")
     assert gera_arquivo('This is a test') == f.read()
     f.close()
 
