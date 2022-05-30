@@ -130,12 +130,9 @@ def test_match_casing():
     
 # Testes do módulo de manipulação:
 def test_gera_arquivo():
-    f = open("resultado.txt", "w")
-    f.write('This is a test\n')
-    f.close()
-    f = open("resultado.txt", "r")
-    expectado = 'This is a test\n'
-    assert expectado == f.read()
+    f = gera_arquivo('This is a test\n')
+    esperado = 'This is a test\n'
+    assert esperado == f.read()
     f.close()
     
 # Testes do módulo de substituição de palavras:
