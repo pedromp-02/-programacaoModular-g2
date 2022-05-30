@@ -150,6 +150,7 @@ def test_substitui_palavra():
     assert substitui_palavra('EXAMPLE', 'EXAMPLE', 'TEST') == 'TEST'
     assert substitui_palavra('Small test', 'small', 'big') == 'Big test'
     assert substitui_palavra('hello world', 'HELLO', 'hi') == 'hi world'
+    assert substitui_palavra('Odds Evens ODDS EVENS odds evens', 'odds', 'evens') == 'Evens Evens EVENS EVENS evens evens'
     assert substitui_palavra('This is sPECIFIC', 'SpeCiFiC', 'nEAT') == 'This is neat'
     assert substitui_palavra('Make it WORk', 'work', 'rUN') == 'Make it run'
     assert substitui_palavra('Have a good DaY', 'DAY', 'EveninG') == 'Have a good evening'
