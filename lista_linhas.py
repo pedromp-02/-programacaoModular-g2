@@ -1,3 +1,5 @@
+# módulo que gera uma lista das linhas com a palavra especificada
+
 from casingComp import *
 import re
 
