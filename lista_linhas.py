@@ -1,4 +1,4 @@
-# módulo que gera uma lista das linhas com a palavra especificada
+# módulo que gera uma lista das linhas com a palavra a ser modificada
 
 from casingComp import *
 import re
