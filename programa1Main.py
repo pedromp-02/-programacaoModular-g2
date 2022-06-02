@@ -11,12 +11,12 @@ print('Bem vindo ao programa de substituição de palavras.')
 if input('Digite "h" caso queira ver o guia de uso, qualquer outra tecla para prosseguir para o programa: ') == 'h':
     print('O programa irá pedir o nome de um arquivo em que a substituição irá acontecer.')
     print('Inclua o formato, como por exemplo "arquivo.txt" em vez de somente "arquivo".')
-    print('O arquivo deve estar no mesmo diretório do programa.')
+    print('Caso o arquivo não esteja no diretório do programa, especifique seu caminho inteiro (como "C:\\Users\\User\\Desktop\\arquivo.txt").')
     print('Então, o programa irá pedir duas palavras:')
     print(' - A primeira será substituída no arquivo origem')
     print(' - A segunda será sua substituição')
 
-nome_arquivo = input('Entre com o nome do arquivo (incluindo formato): ')
+nome_arquivo = input('Entre com o arquivo (incluindo formato): ')
 texto = gera_string(nome_arquivo)
 
 palavra = input('Entre com a palavra a ser substituída: ')
@@ -28,8 +28,10 @@ while (sub.isalpha() == False):
     sub = input('Palavra inválida. Tente novamente: ')
 
 conteudo_final = substitui_palavra(texto,palavra,sub)
-gera_arquivo(conteudo_final)
+
+dir = input('Entre com o nome do arquivo a ser salvo, com formato (diretório para salvar em outra pasta): ')
+gera_arquivo(conteudo_final, dir)
 
 print('Arquivo gerado.')
 
-exit()
+input('Enter para sair')

@@ -3,7 +3,7 @@ import sys
 
 def gera_string(nome_arquivo):
     try:
-        f = open(nome_arquivo, "r")
+        f = open(nome_arquivo, "r", encoding="utf-8")
     except:
         sys.exit('Algo deu errado ao tentar abrir o arquivo.')
 
@@ -11,7 +11,12 @@ def gera_string(nome_arquivo):
     f.close()
     return text
 
-def gera_arquivo(texto):
-    f = open("texto-alterado.txt", "w")
+def gera_arquivo(texto, dir):
+    try:
+        f = open(dir, "w")
+    except:
+        sys.exit('Algo deu errado ao tentar escrever.')
+
     f.write(texto)
+    f.close()
     return
