@@ -1,14 +1,6 @@
 from manipulacao import *
 from casingComp import *
 from substituicao import *
-
-# Testes do módulo de manipulação:
-def test_gera_arquivo():
-    string = 'This is a test\n'
-    f = gera_arquivo(string)
-    with open("texto-alterado.txt", 'r') as f:
-        assert string == f.read()
-    f.close()
     
 def test_gera_string():
     with open("teste.txt", 'w') as f:
@@ -17,6 +9,15 @@ def test_gera_string():
     with open("teste.txt", 'r') as f:
         assert f.read() == gera_string("teste.txt")
     f.close()
+    
+# Testes do módulo de manipulação:
+def test_gera_arquivo():
+    string = 'This is a test\n'
+    diretorio = "texto-alterado.txt"
+    f = gera_arquivo(string,diretorio)
+    with open(diretorio, 'r') as f:
+        assert string == f.read()
+    f.close()   
     
 # Testes do módulo de comparação e casing match de palavras:
 def test_compara_palavras():
