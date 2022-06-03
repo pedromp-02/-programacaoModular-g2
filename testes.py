@@ -1,6 +1,7 @@
 from manipulacao import *
 from casingComp import *
 from substituicao import *
+from lista_linhas import *
 
 # Testes do módulo de manipulação:
 def test_gera_string():
@@ -169,3 +170,10 @@ def test_prog1():
         texto = gera_string(nome_arq)
     f.close()
     assert substitui_palavra(texto, "applications", "apps") == "The usage of certain apps may influence other apps in a positive manner.\n"
+    
+# Testes do módulo de lista de linhas:
+def test_lista_linhas():
+    texto = "Esse teste é muito importante.\nNosso trabalho é feito em Python.\nCada teste possui sua utilidade.\n"
+    palavra = "teste"
+    esperado = "1- Esse teste é muito importante.\n3- Cada teste possui sua utilidade.\n"
+    assert gera_lista_linhas(texto,palavra) == esperado
