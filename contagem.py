@@ -8,6 +8,9 @@ def gera_matriz_indice(texto):
     usadas = []
 
     while(i < len(palavras)):
+      
+      palavras[i] = match_casing("lower", palavras[i]) # match_casing("Title", palavras[i]) ?????
+      
       if(palavras[i] not in usadas):
         
         sub_lista = [palavras[i], 1]
@@ -23,4 +26,4 @@ def gera_matriz_indice(texto):
 
       i += 1
     
-    return matriz # 'texto matriz'
+    return matriz # 'texto matriz' falta converter matriz para string
