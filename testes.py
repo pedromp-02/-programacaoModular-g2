@@ -1,7 +1,9 @@
 from manipulacao import *
 from casingComp import *
 from substituicao import *
-    
+
+# Testes do módulo de manipulação:
+
 def test_gera_string():
     with open("teste.txt", 'w') as f:
         f.write('This is another test\n')
@@ -10,7 +12,6 @@ def test_gera_string():
         assert f.read() == gera_string("teste.txt")
     f.close()
     
-# Testes do módulo de manipulação:
 def test_gera_arquivo():
     string = 'This is a test\n'
     diretorio = "texto-alterado.txt"
