@@ -3,7 +3,6 @@ from casingComp import *
 from substituicao import *
 
 # Testes do módulo de manipulação:
-
 def test_gera_string():
     with open("teste.txt", 'w') as f:
         f.write('This is another test\n')
