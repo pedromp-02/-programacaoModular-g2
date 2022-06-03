@@ -160,17 +160,6 @@ def test_substitui_palavra():
     assert substitui_palavra('The following word is deleted', 'DELETED', '') == 'The following word is '
     assert substitui_palavra('There are 365 days in a year.', '365', '999') == 'There are 365 days in a year.'
     
-# Testes do Programa 1:
-def test_prog1():
-    nome_arq = "testando.txt"
-    with open(nome_arq, "w") as f:
-        f.write("The usage of certain applications may influence other applications in a positive manner.\n")
-    f.close()
-    with open(nome_arq, "r") as f:
-        texto = gera_string(nome_arq)
-    f.close()
-    assert substitui_palavra(texto, "applications", "apps") == "The usage of certain apps may influence other apps in a positive manner.\n"
-    
 # Testes do módulo de lista de linhas:
 def test_lista_linhas():
     texto = "Esse teste é muito importante.\nNosso trabalho é feito em Python.\nCada teste possui sua utilidade.\n"
