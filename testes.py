@@ -175,5 +175,5 @@ def test_prog1():
 def test_lista_linhas():
     texto = "Esse teste é muito importante.\nNosso trabalho é feito em Python.\nCada teste possui sua utilidade.\n"
     palavra = "teste"
-    esperado = "[[1, 'Esse teste é muito importante.'], [3, 'Cada teste possui sua utilidade.']]"
+    esperado = "1 - Esse teste é muito importante.\n3 - Cada teste possui sua utilidade.\n"
     assert gera_lista_linhas(texto,palavra) == esperado
