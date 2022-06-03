@@ -1,5 +1,5 @@
-from manipulacao import *
-from substituicao import *
+from reutilizaveis.manipulacao import *
+from prog1.substituicao import *
 
 # Testes do Programa 1:
 def test_prog1():
