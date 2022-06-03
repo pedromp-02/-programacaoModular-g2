@@ -1,3 +1,6 @@
+from manipulacao import *
+from substituicao import *
+
 # Testes do Programa 1:
 def test_prog1():
     nome_arq = "testando.txt"
