@@ -1,6 +1,6 @@
 # módulo principal do programa 2
-from manipulacao import *
-from contagem import *
+from reutilizaveis.manipulacao import *
+from prog2.contagem import *
 
 '''
 abrir arquivo

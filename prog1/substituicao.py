@@ -1,5 +1,5 @@
 # módulo de substituição de palavras em strings
-from casingComp import *
+from reutilizaveis.casingComp import *
 
 def substitui_palavra(txt,w,s):
     word = ""

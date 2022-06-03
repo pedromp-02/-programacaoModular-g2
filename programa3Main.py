@@ -1,6 +1,6 @@
 # módulo principal do programa 2
-from manipulacao import *
-from lista_linhas import *
+from reutilizaveis.manipulacao import *
+from prog3.lista_linhas import *
 
 '''
 abrir arquivo
