@@ -20,13 +20,14 @@ def gera_matriz_indice(texto):
         usadas.append(palavras[i])
         matriz.append(sub_lista)
         
+        cont += 1
+        
       else:
         j = 0
         while compara_palavras(usadas[j], palavras[i]) == 0:
           j +=1
         
         matriz[j][1] += 1
-        cont += 1
 
       i+=1
 
