@@ -167,6 +167,10 @@ def test_contagem():
     esperado = 'Teste - 3\nSimples - 2\nMódulo - 1\nExemplo - 1\nDe - 1\nBastante - 1\n'
     assert gera_matriz_indice(texto) == esperado
     
+    texto = "Esse: TESTe é\nMuito. ESPECÍFICO\ne Possui\nVÁRIAS, linhas.\nde teste.\n"
+    esperado = 'Esse - 1\nTeste - 2\nMuito - 1\nEspecífico - 1\nE - 1\nPossui - 1\nVárias - 1\nLinhas - 1\nDe - 1\n'
+    assert gera_matriz_indice(texto) == esperado
+    
 # Testes do módulo de lista de linhas:
 def test_lista_linhas():
     texto = "Esse teste é muito importante.\nNosso trabalho é feito em Python.\nCada teste possui sua utilidade.\n"
