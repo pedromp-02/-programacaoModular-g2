@@ -163,7 +163,7 @@ def test_substitui_palavra():
 
 # Testes do módulo de contagem:
 def test_contagem():
-    texto = "Teste Simples Módulo:\nExemplo de teste bastante simples.\nTESTE.\n"
+    texto = "Teste Simples Módulo:\nExemplo de teste bastante simples.\nTESTE\n"
     esperado = 'Teste - 3\nSimples - 2\nMódulo - 1\nExemplo - 1\nDe - 1\nBastante - 1\n'
     assert gera_matriz_indice(texto) == esperado
     
