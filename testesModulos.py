@@ -1,6 +1,7 @@
 from reutilizaveis.manipulacao import *
 from reutilizaveis.casingComp import *
 from prog1.substituicao import *
+from prog2.contagem import *
 from prog3.lista_linhas import *
 
 # Testes do módulo de manipulação:
@@ -159,6 +160,12 @@ def test_substitui_palavra():
     assert substitui_palavra('This is clearlY a test', 'Clearly', 'Simply') == 'This is simply a test'
     assert substitui_palavra('The following word is deleted', 'DELETED', '') == 'The following word is '
     assert substitui_palavra('There are 365 days in a year.', '365', '999') == 'There are 365 days in a year.'
+
+# Testes do módulo de contagem:
+def test_contagem():
+    texto = "Teste: Contagem de Palavras.\nHá varias palavras nesse teste.\nAs palavras serão divididas em uma lista.\n"
+    esperado = "aaaa"
+    assert gera_matriz_indice(texto) == esperado
     
 # Testes do módulo de lista de linhas:
 def test_lista_linhas():
