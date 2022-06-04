@@ -18,11 +18,11 @@ def test_prog1():
 def test_prog2():
     nome_arq = "testando2.txt" 
     with open(nome_arq, "w") as f:
-        f.write("This is a test:\nA SIMPLE TEST.\nthis This THIS tHIS!\n234, 487, 222\né#ààà@ú")
+        f.write("This is a test:\nA SIMPLE TEST.\nthis This THIS tHIS!\n234, 4872, 222\né#à@ú")
     f.close()
     with open(nome_arq, "r") as f:
         texto = gera_string(nome_arq)
     f.close()
-    esperado = 'This - 5\nIs - 1\nA - 2\nTest - 2\nSimple - 1\nÉ - 1\nÀ - 3\nÚ - 1\n'
+    esperado = 'This - 5\nIs - 1\nA - 2\nTest - 2\nSimple - 1\n234 - 1\n4872 - 1\n222 - 1\nÉ - 1\nÀ - 3\nÚ - 1\n'
     assert gera_matriz_indice(texto) == esperado
     
