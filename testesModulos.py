@@ -167,8 +167,8 @@ def test_contagem():
     esperado = 'Teste - 3\nSimples - 2\nMódulo - 1\nExemplo - 1\nDe - 1\nBastante - 1\n'
     assert gera_matriz_indice(texto) == esperado
     
-    texto = "Esse: TESTe é\nMuito. ESPECÍFICO\ne Possui\nVÁRIAS, linhas.\nde teste.\n"
-    esperado = 'Esse - 1\nTeste - 2\nÉ - 1\nMuito - 1\nEspecífico - 1\nE - 1\nPossui - 1\nVárias - 1\nLinhas - 1\nDe - 1\n'
+    texto = "Esse: TESTe TESTE é\nMuito. ESPECÍFICO\ne Possui\nVÁRIAS, linhas LINHAS,.\nde teste!\n"
+    esperado = 'Esse - 1\nTeste - 3\nÉ - 1\nMuito - 1\nEspecífico - 1\nE - 1\nPossui - 1\nVárias - 1\nLinhas - 2\nDe - 1\n'
     assert gera_matriz_indice(texto) == esperado
     
 # Testes do módulo de lista de linhas:
@@ -176,4 +176,9 @@ def test_lista_linhas():
     texto = "Esse teste é muito importante.\nNosso trabalho é feito em Python.\nCada teste possui sua utilidade.\n"
     palavra = "teste"
     esperado = [[1, 'Esse teste é muito importante.'], [3, 'Cada teste possui sua utilidade.']]
+    assert gera_lista_linhas(texto,palavra) == esperado
+    
+    texto = "Linha 1.\nNada.\nNada.\nlINHA 4!\nteste.\nSexta linha.\nSétima lINHA.\n"
+    palavra = "linha"
+    esperado = [[1, 'Linha 1.'], [4, 'lINHA 4!'], [6, 'Sexta linha.'], [7, 'Sétima lINHA.']]
     assert gera_lista_linhas(texto,palavra) == esperado
