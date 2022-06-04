@@ -23,6 +23,6 @@ def test_prog2():
     with open(nome_arq, "r") as f:
         texto = gera_string(nome_arq)
     f.close()
-    esperado = 'This - 5\nIs - 1\nA - 2\nTest - 2\nSimple - 1\n234 - 1\n4872 - 1\n222 - 1\nÉ - 1\nÀ - 3\nÚ - 1\n'
+    esperado = 'This - 5\nIs - 1\nA - 2\nTest - 2\nSimple - 1\n234 - 1\n4872 - 1\n222 - 1\nÉ - 1\nÀ - 1\nÚ - 1\n'
     assert gera_matriz_indice(texto) == esperado
     
