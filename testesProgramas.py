@@ -26,3 +26,15 @@ def test_prog2():
     esperado = 'This - 5\nIs - 1\nA - 2\nTest - 2\nSimple - 1\n234 - 1\n4872 - 1\n222 - 1\nÉ - 1\nÀ - 1\nÚ - 1\n'
     assert gera_matriz_indice(texto) == esperado
     
+# Testes do Programa 3:
+def test_prog3():
+    nome_arq = "testando3.txt"
+    palavra = "test"
+    with open(nome_arq, "w") as f:
+        f.write("Testing:\nA test is very important to this project.\n\n\ntEST!\nTest\nThe main focus is to create a TEST\n")
+    f.close()
+    with open(nome_arq, "r") as f:
+        texto = gera_string(nome_arq)
+    f.close()
+    esperado = [[2, 'A test is very important to this project.'], [5, 'tEST!'], [6, 'Test'], [7, 'The main focus is to create a TEST']]
+    assert gera_lista_linhas(texto,palavra) == esperado
