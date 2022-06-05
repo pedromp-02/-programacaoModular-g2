@@ -2,21 +2,21 @@
 import sys
 
 def gera_string(nome_arquivo):
-    try:
-        f = open(nome_arquivo, "r", encoding="utf-8")
-    except:
+    try: # tenta abrir o arquivo
+        f = open(nome_arquivo, "r")
+    except: # caso não encontre ou outro erro na abertura
         sys.exit('Algo deu errado ao tentar abrir o arquivo.')
 
-    text = f.read()
-    f.close()
-    return text
+    text = f.read() # transforma o arquivo em string
+    f.close()   # fecha arquivo
+    return text # retorna texto do arquivo
 
 def gera_arquivo(texto, dir):
-    try:
+    try: # tenta abrir/criar o arquivo
         f = open(dir, "w")
-    except:
+    except: # caso não consiga abrir/criar
         sys.exit('Algo deu errado ao tentar escrever.')
 
-    f.write(texto)
-    f.close()
+    f.write(texto)  # escreve o texto recebido no arquivo
+    f.close()   # fecha o arquivo de escrita
     return
