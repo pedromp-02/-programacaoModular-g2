@@ -43,6 +43,11 @@ Então, o programa irá contar as ocorrências de cada uma das palavras utilizad
 **EXEMPLO:**
 Caso o programa realize a contagem no arquivo abaixo:
 
+>Arquivo de teste.
+
+>Esse é um arquivo de teste.
+
+>Teste se funciona.
 
 A saída será da forma:
 
