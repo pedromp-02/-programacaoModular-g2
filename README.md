@@ -28,10 +28,12 @@ A substituição é feita levando em conta o *casing* da palavra a ser substitu�
 
 **EXEMPLO:**
 Caso o programa substitua palavra 'teste' pela palavra 'prova' no arquivo abaixo:
->TESTE Teste teste tEstE
+
+TESTE Teste teste tEstE
 
 A saída será da forma:
->PROVA Prova prova prova
+
+PROVA Prova prova prova
 
 ### Programa 2
 O programa 2 é um programa de contagem de palavras.
@@ -41,19 +43,21 @@ Então, o programa irá contar as ocorrências de cada uma das palavras utilizad
 
 **EXEMPLO:**
 Caso o programa realize a contagem no arquivo abaixo:
->Arquivo de teste.
->Esse é um arquivo de teste.
->Teste se funciona.
+
+Arquivo de teste.
+Esse é um arquivo de teste.
+Teste se funciona.
 
 A saída será da forma:
->Arquivo - 2
->De - 2
->Teste - 3
->Esse - 1
->É - 1
->Um - 1
->Se - 1
->Funciona - 1
+
+Arquivo - 2
+De - 2
+Teste - 3
+Esse - 1
+É - 1
+Um - 1
+Se - 1
+Funciona - 1
 
 ### Programa 3
 O programa 3 é um programa de listagem de linhas.
@@ -65,13 +69,14 @@ O programa registra cada linha que a palavra ocorre e sua posição, de forma qu
 
 **EXEMPLO:**
 Caso o programa realize a listagem da palavra 'teste' no arquivo abaixo:
->Arquivo de teste.
+
+Arquivo de teste.
 Esse é um arquivo de teste. Essa linha contém teste duas vezes.
 Essa linha não contém a palavra.
 Teste se funciona.
 Essa linha também não.
 
 A saída será da forma:
->1 - Arquivo de teste.
+1 - Arquivo de teste.
 2 - Esse é um arquivo de teste. Essa linha contém teste duas vezes.
 4 - Teste se funciona.
