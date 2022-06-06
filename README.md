@@ -66,12 +66,12 @@ O programa registra cada linha que a palavra ocorre e sua posição, de forma qu
 **EXEMPLO:**
 Caso o programa realize a listagem da palavra 'teste' no arquivo abaixo:
 >Arquivo de teste.
->Esse é um arquivo de teste. Essa linha contém teste duas vezes.
->Essa linha não contém a palavra.
->Teste se funciona.
->Essa linha também não.
+Esse é um arquivo de teste. Essa linha contém teste duas vezes.
+Essa linha não contém a palavra.
+Teste se funciona.
+Essa linha também não.
 
 A saída será da forma:
 >1 - Arquivo de teste.
->2 - Esse é um arquivo de teste. Essa linha contém teste duas vezes.
->4 - Teste se funciona.
+2 - Esse é um arquivo de teste. Essa linha contém teste duas vezes.
+4 - Teste se funciona.
