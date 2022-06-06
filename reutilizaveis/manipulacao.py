@@ -3,7 +3,7 @@ import sys
 
 def gera_string(nome_arquivo):
     try: # tenta abrir o arquivo
-        f = open(nome_arquivo, "r")
+        f = open(nome_arquivo, "r", encoding="utf-8")
     except: # caso não encontre ou outro erro na abertura
         sys.exit('Algo deu errado ao tentar abrir o arquivo.')
 
