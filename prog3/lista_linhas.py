@@ -18,7 +18,9 @@ def gera_lista_linhas(texto, palavra):
                 if len(l) < 1 or l[-1][0] != count: #Adiciona somente se a linha não já estiver adicionada
                     l_aux = [count, s]
                     l.append(l_aux)
-    return l
-  
-  
-  #[OBS]: Codigo funciona como devido, mas poderia usar mais testes
+    
+    text = ""
+    for linha in l:
+        text += f"{linha[0]} - {linha[1]}\n" # monta o texto a partir da lista
+
+    return text

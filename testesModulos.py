@@ -175,10 +175,10 @@ def test_contagem():
 def test_lista_linhas():
     texto = "Esse teste é muito importante.\nNosso trabalho é feito em Python.\nCada teste possui sua utilidade.\n"
     palavra = "teste"
-    esperado = [[1, 'Esse teste é muito importante.'], [3, 'Cada teste possui sua utilidade.']]
+    esperado = "1 - Esse teste é muito importante.\n3 - Cada teste possui sua utilidade.\n"
     assert gera_lista_linhas(texto,palavra) == esperado
     
     texto = "Linha 1.\nNada.\nNada.\nlINHA 4!\nteste.\nSexta linha.\nSétima lINHA.\n"
     palavra = "linha"
-    esperado = [[1, 'Linha 1.'], [4, 'lINHA 4!'], [6, 'Sexta linha.'], [7, 'Sétima lINHA.']]
+    esperado = "1 - Linha 1.\n4 - lINHA 4!\n6 - Sexta linha.\n7 - Sétima lINHA.\n"
     assert gera_lista_linhas(texto,palavra) == esperado

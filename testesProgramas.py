@@ -36,5 +36,5 @@ def test_prog3():
     with open(nome_arq, "r") as f:
         texto = gera_string(nome_arq)
     f.close()
-    esperado = [[2, 'A test is very important to this project.'], [5, 'tEST!'], [6, 'Test'], [7, 'The main focus is to create a TEST']]
+    esperado = "2 - A test is very important to this project.\n5 - tEST!\n6 - Test\n7 - The main focus is to create a TEST\n"
     assert gera_lista_linhas(texto,palavra) == esperado

@@ -23,10 +23,7 @@ palavra = input('Entre com a palavra a ser procurada: ')
 while (palavra.isalpha() == False): # checa se a palavra é válida
     palavra = input('Palavra inválida. Tente novamente: ')
 
-lista = gera_lista_linhas(texto, palavra) # gera a lista de linhas
-conteudo_final = ""
-for linha in lista:
-    conteudo_final += f"{linha[0]} - {linha[1]}\n" # monta o texto a partir da lista
+conteudo_final = gera_lista_linhas(texto, palavra) # gera a string da lista de linhas
 
 print("Listagem: ")
 print(conteudo_final) # printa resultado
