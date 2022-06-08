@@ -1,4 +1,5 @@
-# módulo principal do programa 2
+# módulo principal do programa 3
+# dependências: módulo reutilizável manipulacao, módulo específico lista_linhas
 from reutilizaveis.manipulacao import *
 from prog3.lista_linhas import *
 

@@ -1,4 +1,5 @@
 # módulo principal do programa 1
+# dependências: módulo reutilizável manipulacao, módulo específico substituicao
 from reutilizaveis.manipulacao import *
 from prog1.substituicao import *
 

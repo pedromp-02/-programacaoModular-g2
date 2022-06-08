@@ -1,5 +1,5 @@
 # módulo que gera uma lista das linhas com a palavra a ser modificada
-
+# dependências: módulo reutilizável casingComp
 from reutilizaveis.casingComp import *
 import re
 

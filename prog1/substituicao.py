@@ -1,4 +1,5 @@
 # módulo de substituição de palavras em strings
+# dependências: módulo reutilizável casingComp
 from reutilizaveis.casingComp import *
 
 def substitui_palavra(txt,w,s):

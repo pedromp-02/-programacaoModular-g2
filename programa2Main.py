@@ -1,4 +1,5 @@
 # módulo principal do programa 2
+# dependências: módulo reutilizável manipulacao, módulo específico contagem
 from reutilizaveis.manipulacao import *
 from prog2.contagem import *
 

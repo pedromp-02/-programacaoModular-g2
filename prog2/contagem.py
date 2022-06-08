@@ -1,4 +1,5 @@
 # Módulo de contagem de palavras
+# dependências: módulo reutilizável casingComp
 from reutilizaveis.casingComp import *
 import re 
 
